@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/* --------------------------
+リセット
+-----------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+img{
+    vertical-align: bottom;/* vab */
+}
+
+/* --------------------------
+全ページ共通 
+-----------------------------*/
+
+body{
+    /* background-color: #3f3f3f; */
+    background: linear-gradient(-20deg, #3f3f3f 0%, rgb(15, 15, 15) 100%);
+    color: #fff;
+    font-family: 'Klee One', cursive;
+}
+
+header{
+    padding: 30px 0;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Klee One', cursive;
+    letter-spacing: 0.1em;
+}
+
+.g-nav{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(0deg, #43341B 0%, #856734 100%);
+    margin-bottom: 20px;
+}
+
+.g-nav ul{
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+
+}
+
+.g-nav ul li{
+    line-height: 50px;
+    width: 20%;
+    height: 50px;/* liにnavと同じ高さ！！！！！！ */
+    text-align: center;
+
+}
+
+.g-nav ul li a{
+    display: block;
+    line-height: 50px;
+    color: #fff;
+    border-left: 1px dotted #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.g-nav ul li a:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 1s;
+}
+
+.g-nav ul li:last-of-type>a{
+    border-right: 1px dotted #fff;
+}
+
+main{
+    width: 960px;
+    margin: 0 auto 80px;
+}
+
+footer{
+    width: 100%;
+    background: linear-gradient(0deg, #43341B 0%, #856734 100%); 
+    height: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+footer p{
+    line-height: 100px;
+}
+
+/* --------------------------
+トップページ部分
+-----------------------------*/
+
+.main-visual{
+    background-image: no-repeat center/cover;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.main-copy{
+}
+
+.main-copy h2{
+    line-height: 2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-copy p{
+    line-height: 2.4;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* --------------------------
+季節ページ部分
+-----------------------------*/
+
+.wrapper{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.wrapper .photo{
+    margin-right: 20px;
+}
+
+.wrapper .season-txt{
+    
+}
+
+.wrapper .season-txt h2{
+    margin-bottom: 20px;
+}
+
+.wrapper .season-txt p{
+    line-height: 2.2;
+}
+
+/* --------------------------
+個別ページ部分
+-----------------------------*/
+
+.spring .g-nav{
+    /* background-color: #e87a90; */
+    background: linear-gradient(0deg,  #5e313a 0%,  #e87a90 100%);
+}
+
+.spring footer{
+    /* background-color: #e87a90; */
+    background: linear-gradient(0deg,  #5e313a 0%,  #e87a90 100%);
+}
+
+.summer .g-nav{
+    /* background-color: #0B346E; */
+    background: linear-gradient(0deg, #05152c 0%, #0B346E 100%);
+}
+
+.summer footer{
+    /* background-color: #0B346E; */
+    background: linear-gradient(0deg, #05152c 0%, #0B346E 100%);
+}
+
+
+.fall .g-nav{
+    background: linear-gradient(0deg, #4e2e0d 0%, #E98B2A 100%);
+}
+
+.fall footer{
+    background: linear-gradient(0deg, #4e2e0d 0%, #E98B2A 100%);
+}
+
+.winter .g-nav{
+    /* background-color: #A5DEE4; */
+    background: linear-gradient(0deg, #384a4d 0%, #A5DEE4 100%);
+}
+
+.winter footer{
+    /* background-color: #A5DEE4; */
+    background: linear-gradient(0deg, #384a4d 0%, #A5DEE4 100%);
+}
